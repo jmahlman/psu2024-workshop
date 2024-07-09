@@ -12,7 +12,7 @@ terraform {
     lock_method    = "POST"
     unlock_method  = "DELETE"
   }
-  
+
 }
 
 // configure the provider
