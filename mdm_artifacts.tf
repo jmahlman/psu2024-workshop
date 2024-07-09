@@ -1,4 +1,5 @@
 # Monolith
+# I decided this needed more commentary.
 
 resource "zentral_mdm_artifact" "monolith-default-enrollment" {
   name      = "Monolith - Default enrollment"
