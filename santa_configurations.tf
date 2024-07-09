@@ -1,5 +1,5 @@
 resource "zentral_santa_configuration" "default" {
-  name           = "🎅 Claus"
+  name           = "🎅 Claus 2"
   client_mode    = "MONITOR"
   enable_bundles = true
 }
