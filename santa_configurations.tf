@@ -13,7 +13,7 @@ resource "zentral_santa_rule" "teamid-agilebits" {
   configuration_id  = zentral_santa_configuration.default.id
   policy            = "BLOCKLIST"
   target_type       = "TEAMID"
-  target_identifier = "2BUAC4S2C"
+  target_identifier = "2BUA8C4S2C"
   custom_message    = "No 1Password 4 u"
   description       = "Block AgileBits Software, mostly for demo purposes"
 }
