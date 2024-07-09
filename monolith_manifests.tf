@@ -35,9 +35,16 @@ resource "zentral_monolith_manifest_enrollment_package" "osquery" {
   builder       = "zentral.contrib.osquery.osx_package.builder.OsqueryZentralEnrollPkgBuilder"
 }
 
-# sub manifest
+# sub manifests
 
+# Default agents sub manifest
 resource "zentral_monolith_manifest_sub_manifest" "default-agents" {
   manifest_id     = zentral_monolith_manifest.default.id
   sub_manifest_id = zentral_monolith_sub_manifest.agents.id
+}
+
+# Default Apps sub manifest
+resource "zentral_monolith_manifest_sub_manifest" "default-apps" {
+  manifest_id     = zentral_monolith_manifest.default.id
+  sub_manifest_id = zentral_monolith_sub_manifest.apps.id
 }
